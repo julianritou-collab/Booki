@@ -1,4 +1,61 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
+body {
+    font-family: 'Raleway','sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
 }
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+/** general provisoire **/
+h1 , h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+h3 {
+    font-weight: 700;
+}
+
+/****** Header ***********/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px; /**to do: ajuster le padding en fonction du design final **/
+    height:79px;
+    margin-bottom: 25px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 40%;
+    height: auto;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 68px;
+    list-style: none;
+}
+/** to do: faire évoluer ces lien en bouton? **/
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.header-nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: -31px;
+    text-decoration-thickness: 2px;
+    color: var(--main-color);
+}
+
+
+
