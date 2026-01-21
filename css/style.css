@@ -1,10 +1,24 @@
 /****** General ***********/
-body {
-    font-family: 'Raleway','sans-serif';
+* {
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+body {
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
+/** Container général header, main, footer**/
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
 
 :root {
     --main-color: #0065FC;
@@ -24,7 +38,6 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px; /**to do: ajuster le padding en fonction du design final **/
     height:79px;
     margin-bottom: 25px;
 }
@@ -41,6 +54,7 @@ header {
 
 .header-nav ul {
     display: flex;
+    align-items: flex-start;
     gap: 68px;
     list-style: none;
 }
