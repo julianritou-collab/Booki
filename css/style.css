@@ -6,10 +6,12 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --main-sel-color: #D9D9D9;
+    --main-blue-color: #0065FC;
+    --main-light-grey-color: #F2F2F2;
+    --main-grey-color: #D9D9D9;
+    --main-black-color: #000000;
     --filter-bg-color: #DEEBFF;
+    --main-white-color: #FFFFFF;
 }
 
 body {
@@ -24,13 +26,6 @@ body {
     min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
 }
 /** general provisoire **/
 h1 , h2 {
@@ -77,20 +72,20 @@ header {
 /** to do: faire évoluer ces lien en bouton? **/
 .header-nav a {
     text-decoration: none;
-    color: black;
+    color: var(--main-black-color);
     font-weight: 400;
 }
 .header-nav a:hover {
     text-decoration: underline;
     text-underline-offset: -31px;
     text-decoration-thickness: 2px;
-    color: var(--main-color);
+    color: var(--main-blue-color);
 }
 /***** Main Section ***********/
 
 /** Formulaire de recherche **/
 .search-form {
-    margin: 35px 0px;
+    margin: 35px 0px 25px 0px;
     display: flex;
     height: 49px;
 }
@@ -98,17 +93,17 @@ header {
 .search-form label {
     display: inline-flex;
     min-width: 50px;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-light-grey-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: 1px solid var(--main-bg-color);
+    border: 1px solid var(--main-light-grey-color);
     justify-content: center;
     align-items: center;
 }
 
 .search-form input{
     width:195px;
-    border: 1px solid var(--main-bg-color);
+    border: 1px solid var(--main-light-grey-color);
     border-right:none;
     text-align: center;
     font-size:18px;
@@ -117,20 +112,65 @@ header {
 
 .search-form input:focus {
     outline: none;
-    border: 1px solid var(--main-sel-color);
+    border: 1px solid var(--main-grey-color);
     border-right:none;
 }
 
 .search-form button {
     width:132px;
-    background-color: var(--main-color);
-    color: white;
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size:18px;
     font-weight: 700;
 }
+/***** filtre recherche ******/
+
+.filters-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.filter-button {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 13px 19px 13px 19px;
+    border: 2px solid var(--main-grey-color);
+    background-color: var(--main-white-color);;
+    border-radius: 25px;
+}
+.filter-button:hover {
+    background-color: var(--filter-bg-color);;
+}
+.filters-title{
+    display:inline-block;
+    font-size:18px;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+
+.filter-icon {
+    margin-right: 8px;
+    color: var(--main-blue-color);
+}
+/***** info resultat recherche *****/
+
+.info-icon {
+    font-size: 12px;
+    display: inline-block;
+    border: 0.5px solid var(--main-grey-color);  
+    padding: 6px 9px 6px 10px;
+    color: var(--main-blue-color);
+    border-radius: 25px;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+
 
 
 
