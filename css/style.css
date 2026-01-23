@@ -171,6 +171,39 @@ header {
     top: -2px;
 }
 
+/***** Footer ***********/
+footer {
+    display: flex;
+    background-color: var(--main-grey-color);
+    padding-bottom: 5px;
+}
+
+.footer-section {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    margin: 20px 0px 0px 0px;
+    font-size: 18px;
+}
+
 
 
 
