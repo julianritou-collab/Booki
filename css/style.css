@@ -63,7 +63,7 @@ header {
 }
 
 .header-logo img {
-    width: 33%;
+    width: 33.33%;
     height: auto;
 }
 
@@ -91,24 +91,24 @@ header {
 /***** Main Section ***********/
 
 /** Formulaire de recherche **/
-.search-form {
-    margin: 35px 0px 25px 0px;
+.search-container {
     display: flex;
     height: 49px;
+    margin: 35px 0px 25px 0px;
 }
 
-.search-form label {
-    display: inline-flex;
-    min-width: 50px;
+.search-label-icon {
+    font-size: 18px;
+}
+
+.search-label {
     background-color: var(--main-light-grey-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: 1px solid var(--main-light-grey-color);
-    justify-content: center;
-    align-items: center;
+    padding: 14px 18px 16px 18.5px;
 }
 
-.search-form input {
+.search-input { 
     width: 195px;
     border: 1px solid var(--main-light-grey-color);
     border-right: none;
@@ -117,14 +117,14 @@ header {
     font-weight: 700;
 }
 
-.search-form input:focus {
+.search-input:focus {
     outline: none;
     border: 1px solid var(--main-grey-color);
     border-right: none;
 }
 
-.search-form button {
-    width: 132px;
+.search-button {
+    padding: 0px 16px;
     background-color: var(--main-blue-color);
     color: var(--main-white-color);
     border: none;
@@ -134,7 +134,7 @@ header {
     font-weight: 700;
 }
 
-/***** filtre recherche ******/
+/***** filtres de recherche ******/
 
 .filters-container {
     display: inline-flex;
@@ -149,7 +149,6 @@ header {
     padding: 13px 19px 13px 19px;
     border: 2px solid var(--main-grey-color);
     background-color: var(--main-white-color);
-    ;
     border-radius: 25px;
 }
 
@@ -170,7 +169,7 @@ header {
     color: var(--main-blue-color);
 }
 
-/***** info resultat recherche *****/
+/***** info resultat de recherche *****/
 
 .info-icon {
     font-size: 12px;
