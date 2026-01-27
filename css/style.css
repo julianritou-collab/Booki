@@ -63,8 +63,8 @@ header {
 }
 
 .header-logo img {
-    width: 33.33%;
-    height: auto;
+    width: 61.09px;
+    height: 19px;
 }
 
 .header-nav ul {
@@ -174,7 +174,6 @@ span.search-button-text {
 
 .filter-button:hover {
     background-color: var(--filter-bg-color);
-    ;
 }
 
 .filters-title {
