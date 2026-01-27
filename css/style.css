@@ -90,7 +90,8 @@ header {
 
 /***** Main Section ***********/
 
-.main-section h1 {
+
+.main-title h1 {
     margin-bottom: -8px;
 }
 /** Formulaire de recherche **/
@@ -238,6 +239,10 @@ footer {
         max-width: 375px;
         padding: 0 0px;
         box-sizing: border-box;
+    }
+
+    .main-title{
+        margin: 0 10px 0 0;
     }
 
     .main-section {
