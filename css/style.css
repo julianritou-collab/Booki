@@ -74,7 +74,6 @@ header {
     list-style: none;
 }
 
-/** to do: faire évoluer ces lien en bouton? **/
 .header-nav a {
     text-decoration: none;
     color: var(--main-black-color);
@@ -254,6 +253,45 @@ footer {
         box-sizing: border-box;
     }
 
+    /****** header adjustments ******/
+    header {
+        flex-direction: column;
+        align-items: center;
+        height:auto;
+    }
+
+    .header-logo {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+
+    .header-nav ul {
+        gap: 0px; 
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .header-nav li {
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid var(--main-light-grey-color);
+        padding-bottom: 15px;
+    }
+
+    .header-nav li:hover {
+        border-bottom-color: var(--main-blue-color);
+    }
+
+    .header-nav a:hover {
+        text-decoration: none;
+    }
+
+    /****** main section adjustments ******/
     .main-section {
         padding: 0 10px 0 20px;
     }
