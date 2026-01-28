@@ -163,12 +163,16 @@ span.search-button-text {
 }
 
 .filter-button {
+    display: inline-flex;
+    height:50px;
     font-size: 17px;
     font-weight: 700;
-    padding: 13px 19px 13px 19px;
+    padding: 0px 17px;
     border: 2px solid var(--main-grey-color);
     background-color: var(--main-white-color);
     border-radius: 25px;
+    align-items: center;
+    gap: 10px;/* espace entre icone et texte */
 }
 
 .filter-button:hover {
@@ -178,10 +182,8 @@ span.search-button-text {
 .filters-title {
     font-size: 18px;
 }
-
 .filter-icon {
-    font-size: 17px;
-    margin-right: 8px;
+    font-size: 22px;
     color: var(--main-blue-color);
 }
 
@@ -243,7 +245,6 @@ footer {
     }
     .filter-button {
         font-size: 16px;
-        padding: 13.5px 18px 13.5px 18px;
     }
 }
 
@@ -320,4 +321,17 @@ footer {
     .search-input {
         max-width: 100%;
     }
+
+    .main-filters {
+        padding-right: 10px;
+    }
+
+    .filters-container {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 20px 10px;
+    }
+    .filter-button {
+        font-size: 14px;
+    }   
 }
