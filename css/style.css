@@ -233,9 +233,13 @@ footer {
 }
 /****** Responsive ***********/
 @media (max-width: 1024px) {
+
+    .filters-title {
+        margin-top: 0px;
+    }
     .main-filters {
         flex-direction: column;
-        gap: 0;
+        gap: 5px;
     }
     .filter-button {
         font-size: 16px;
