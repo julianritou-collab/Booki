@@ -192,16 +192,19 @@ span.search-button-text {
 
 /***** info resultat de recherche *****/
 
+.result-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .info-icon {
-    font-size: 12px;
+    font-size: 10px;
     display: inline-block;
-    border: 0.5px solid var(--main-grey-color);
-    padding: 6px 9px 6px 10px;
+    border: 1px solid var(--main-grey-color);
+    padding: 6px 9px 6px 9px;
     color: var(--main-blue-color);
     border-radius: 25px;
-    margin-right: 10px;
-    position: relative;
-    top: -2px;
 }
 
 /***** Footer ***********/
@@ -338,4 +341,8 @@ footer {
     .filter-button {
         font-size: 14px;
     }   
+
+    .result-info {
+        padding-right: 10px;
+    }
 }
