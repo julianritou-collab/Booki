@@ -236,7 +236,7 @@ footer {
 }
 
 .footer-section h3 {
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
     font-size: 18px;
 }
 /****** Responsive ***********/
@@ -261,7 +261,6 @@ footer {
         width: 100%;
         max-width: 375px;
         padding: 0 0px;
-        box-sizing: border-box;
     }
 
     /****** header adjustments ******/
@@ -304,19 +303,13 @@ footer {
 
     /****** main section adjustments ******/
     .main-section {
-        padding: 0 10px 0 20px;
+        padding: 0 20px;
     }
-
-    .main-title{
-        margin: 0 10px 0 0;
-    }
-
+    
     .search-button {      
         min-width: 49px; 
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position: relative;
-        left: -10px;
     }
     .search-button-text {
         display: none;
@@ -327,10 +320,9 @@ footer {
     }
     .search-input {
         max-width: 100%;
-    }
-
-    .main-filters {
-        padding-right: 10px;
+        text-align: start;
+        padding-left: 25px;
+        margin-right: -10px;
     }
 
     .filters-container {
@@ -340,11 +332,9 @@ footer {
     }
     .filter-button {
         font-size: 14px;
+        max-width: 162.5px;
     }   
 
-    .result-info {
-        padding-right: 10px;
-    }
     /****** footer adjustments ******/
     footer {
         flex-direction: column;
