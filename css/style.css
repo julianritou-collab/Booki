@@ -253,22 +253,34 @@ span.search-button-text {
     box-sizing: border-box;
 }
 
+.hosting-and-popular h2{
+    margin: 0px;
+}
+
 /***** hosting section *****/
 .hosting-section {
     width: 65%;
 }
 
+.hosting-cards{
+    display: grid;
+    grid-template:  1fr 1fr / 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 33px 0;
+}
+
 .hosting-cards .card {
     display: flex;
     flex-direction: column;
-    max-width: 400px; /* largeur max des cartes provisoire pour dev*/
 }
+
 .hosting-cards img {
     width: 100%;
     height: 114px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 
 .hosting-cards .card-content {
     display: flex;
@@ -289,6 +301,11 @@ span.search-button-text {
 .hosting-cards .card-rating {
     margin-bottom: 5px;
     margin-top: 3px;
+}
+
+.hosting-section a {
+    font-size: 18px;
+    font-weight: 700;
 }
 /**** Popular section *****/
 
