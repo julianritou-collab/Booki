@@ -523,8 +523,8 @@ footer {
         border-bottom: 2px solid var(--main-light-grey-color);
         padding-bottom: 15px;
     }
-
-    .header-nav li:hover {
+    
+    .header-nav li:has(a:hover) {
         border-bottom-color: var(--main-blue-color);
     }
 
