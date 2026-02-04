@@ -30,7 +30,8 @@ body {
 }
 
 /** general provisoire **/
-h1, h2 {
+h1,
+h2 {
     font-size: 22px;
     font-weight: 700;
 }
@@ -52,6 +53,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 /***** global carte ***********/
 .card {
     background-color: var(--main-white-color);
@@ -128,6 +130,7 @@ header {
 .main-title h1 {
     margin-bottom: -8px;
 }
+
 /** Formulaire de recherche **/
 .search-container {
     display: flex;
@@ -142,15 +145,15 @@ header {
 
 .search-label {
     display: inline-flex;
-    min-width: 50px;  
+    min-width: 50px;
     justify-content: center;
     align-items: center;
     background-color: var(--main-light-grey-color);
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px; 
+    border-bottom-left-radius: 15px;
 }
 
-.search-input { 
+.search-input {
     max-width: 195px;
     width: 100%;
     border: 1px solid var(--main-light-grey-color);
@@ -167,7 +170,7 @@ header {
 }
 
 .search-button {
-    min-width:132px;
+    min-width: 132px;
     background-color: var(--main-blue-color);
     color: var(--main-white-color);
     border: none;
@@ -191,7 +194,7 @@ span.search-button-text {
 .main-filters {
     display: flex;
     gap: 15px;
-    margin-bottom:25px;
+    margin-bottom: 25px;
 }
 
 .filters-container {
@@ -202,7 +205,7 @@ span.search-button-text {
 
 .filter-button {
     display: inline-flex;
-    height:50px;
+    height: 50px;
     font-size: 17px;
     font-weight: 700;
     padding: 0px 17px;
@@ -210,7 +213,8 @@ span.search-button-text {
     background-color: var(--main-white-color);
     border-radius: 25px;
     align-items: center;
-    gap: 10px;/* espace entre icone et texte */
+    gap: 10px;
+    /* espace entre icone et texte */
 }
 
 .filter-button:hover {
@@ -242,20 +246,22 @@ span.search-button-text {
     color: var(--main-blue-color);
     border-radius: 25px;
 }
+
 /****** Hebergements And Populaires ***********/
 .hosting-and-popular {
     display: flex;
     justify-content: space-between;
 }
 
-.hosting-section , .popular-section {
+.hosting-section,
+.popular-section {
     background-color: var(--main-light-grey-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-.hosting-and-popular h2{
+.hosting-and-popular h2 {
     margin: 0px;
 }
 
@@ -264,9 +270,9 @@ span.search-button-text {
     width: 65%;
 }
 
-.hosting-cards{
+.hosting-cards {
     display: grid;
-    grid-template:  1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
     gap: 30px;
     margin: 33px 0;
 }
@@ -309,6 +315,7 @@ span.search-button-text {
     font-size: 18px;
     font-weight: 700;
 }
+
 /**** Popular section *****/
 
 .popular-section {
@@ -325,7 +332,7 @@ span.search-button-text {
     color: var(--main-blue-color);
 }
 
-.popular-cards{
+.popular-cards {
     display: grid;
     grid-template: 1fr / 1fr;
     margin-top: 33px;
@@ -364,21 +371,22 @@ span.search-button-text {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+
 /***** Activity section ***********/
-.activity-section{
+.activity-section {
     padding: 30px;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
     margin: 33px 0;
 }
 
-.activity-section h2{
+.activity-section h2 {
     margin: 0px;
 }
 
-.activity-cards{
+.activity-cards {
     display: grid;
-    grid-template: 1fr  / 1fr 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 33px;
 }
@@ -403,7 +411,7 @@ span.search-button-text {
 }
 
 .activity-cards .card-title {
-    margin-left: 19px; 
+    margin-left: 19px;
 }
 
 
@@ -412,7 +420,7 @@ footer {
     display: flex;
     background-color: var(--main-light-grey-color);
     padding-bottom: 20px;
-    gap:20px;
+    gap: 20px;
 }
 
 .footer-section {
@@ -426,7 +434,7 @@ footer {
 .footer-section ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -436,13 +444,14 @@ footer {
     margin-top: 20px;
     font-size: 18px;
 }
+
 /****** Responsive ***********/
 @media (max-width: 1024px) {
 
     .filters-title {
         margin-top: 0px;
     }
-    
+
     .main-filters {
         flex-direction: column;
         gap: 5px;
@@ -467,12 +476,12 @@ footer {
 
     .popular-cards {
         grid-template: 1fr / 1fr 1fr 1fr;
-        margin-top : 20px;
+        margin-top: 20px;
     }
 
     .popular-cards img {
         height: auto;
-        min-height:136px;
+        min-height: 136px;
     }
 
     .activity-cards img {
@@ -487,6 +496,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
     .main-container {
         width: 100%;
@@ -498,7 +508,7 @@ footer {
     header {
         flex-direction: column;
         align-items: center;
-        height:auto;
+        height: auto;
     }
 
     .header-logo {
@@ -511,19 +521,19 @@ footer {
     }
 
     .header-nav ul {
-        gap: 0px; 
+        gap: 0px;
         padding: 0;
         margin: 0;
         width: 100%;
     }
-    
+
     .header-nav li {
         width: 50%;
         text-align: center;
         border-bottom: 2px solid var(--main-light-grey-color);
         padding-bottom: 15px;
     }
-    
+
     .header-nav li:has(a:hover) {
         border-bottom-color: var(--main-blue-color);
     }
@@ -536,9 +546,9 @@ footer {
     .main-section {
         padding: 0 20px;
     }
-    
-    .search-button {      
-        min-width: 49px; 
+
+    .search-button {
+        min-width: 49px;
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
@@ -546,7 +556,7 @@ footer {
     .search-button-text {
         display: none;
     }
-    
+
     .search-button-icon {
         display: contents;
     }
@@ -563,37 +573,41 @@ footer {
         grid-template: 1fr 1fr / 1fr 1fr;
         gap: 20px 10px;
     }
+
     .filter-button {
         font-size: 14px;
         max-width: 162.5px;
-    }  
+    }
 
     .hosting-and-popular {
         flex-direction: column-reverse;
-        gap:5px;
+        gap: 5px;
     }
 
-    .hosting-section , .popular-section { 
+    .hosting-section,
+    .popular-section {
         border-radius: 0%;
         padding: 30px 20px;
     }
 
-    .hosting-section {       
+    .hosting-section {
         background-color: var(--main-white-color);
         padding-bottom: 20px;
     }
-    
+
     .popular-section {
-        margin-top:0;
+        margin-top: 0;
     }
 
-    .hosting-cards , .popular-cards , .activity-cards {
+    .hosting-cards,
+    .popular-cards,
+    .activity-cards {
         grid-template: 1fr / 1fr;
         gap: 15px;
     }
 
     .hosting-cards {
-        margin: 17px 0 15px 0; 
+        margin: 17px 0 15px 0;
     }
 
     .popular-cards {
