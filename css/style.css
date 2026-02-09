@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 79px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .header-logo {
@@ -121,7 +121,7 @@ header {
 }
 
 .search-input {
-    max-width: 195px;
+    max-width: 190px;
     width: 100%;
     border: 1px solid var(--main-light-grey-color);
     border-right: none;
@@ -160,7 +160,7 @@ span.search-button-text {
 .main-filters {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .filters-container {
@@ -217,7 +217,6 @@ footer {
     display: flex;
     background-color: var(--main-light-grey-color);
     padding-bottom: 20px;
-    gap: 20px;
 }
 
 .footer-section {
@@ -239,6 +238,7 @@ footer {
 
 .footer-section h3 {
     margin-top: 20px;
+    margin-bottom: 16px;
     font-size: 18px;
 }
 
@@ -258,6 +258,9 @@ footer {
         font-size: 16px;
     }
 
+    footer {
+        gap: 30px;
+    }
 }
 
 /***** Responsive mobile *****/
@@ -349,7 +352,6 @@ footer {
     /****** footer adjustments ******/
     footer {
         flex-direction: column;
-        gap: 30px;
         padding-top: 10px;
     }
 
