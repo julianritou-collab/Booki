@@ -268,7 +268,6 @@ footer {
 
     .main-container {
         width: 100%;
-        max-width: 375px;
         padding: 0 0px;
     }
 
@@ -345,7 +344,6 @@ footer {
 
     .filter-button {
         font-size: 14px;
-        max-width: 162.5px;
         padding: 0 12px 0 17px;
     }
 
