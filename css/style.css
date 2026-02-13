@@ -165,7 +165,7 @@ span.search-button-text {
 
 .filters-container {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 15px;
 }
 
